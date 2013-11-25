@@ -18,7 +18,7 @@ This repo contains a personally edited edition of Ghost which I (caleuanhopkins)
 
 Been working on a quick and dirty solution to get post images working as my CEH theme needed them. Not only that, but for the social media head meta tags, I needed some global variables to work outside the post loop. Thankfully, I got both to work, but it's worth noting that the Post Images only work by **URL only**. So no image uploader feature installed, it will only work by typing or pasting in the image url. Here's a quick GIF:
 
-!(http://i.imgur.com/B2MUFzp.gif?1)
+![](http://i.imgur.com/B2MUFzp.gif?1)
 
 ### Installation
 
