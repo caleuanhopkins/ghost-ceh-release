@@ -1,5 +1,6 @@
-Ghost CEH - An Edited Release Version of Ghost by caleuanhopkins
+Ghost CEH 
 =================
+An Edited Release Version of Ghost by caleuanhopkins
 
 ## WARNING
 
