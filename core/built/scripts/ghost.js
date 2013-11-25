@@ -18706,6 +18706,7 @@ helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
             this.$('#entry-markdown').text(this.model.get('markdown'));
 
             this.listenTo(this.model, 'change:title', this.renderTitle);
+            this.listenTo(this.model, 'change:image', this.renderImage);
 
             this.initMarkdown();
             this.renderPreview();
@@ -18789,6 +18790,10 @@ helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
 
         renderTitle: function () {
             this.$('#entry-title').val(this.model.get('title'));
+        },
+
+        renderImage: function () {
+            this.$('#entry-image').val(this.model.get('image'));
         },
 
         // This is a hack to remove iOS6 white space on orientation change bug

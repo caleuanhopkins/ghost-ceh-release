@@ -1194,9 +1194,11 @@
             this.addSubview(new PublishBar({el: "#publish-bar", model: this.model})).render();
 
             this.$('#entry-title').val(this.model.get('title')).focus();
+            this.$('#entry-image').val(this.model.get('image')).focus();
             this.$('#entry-markdown').text(this.model.get('markdown'));
 
             this.listenTo(this.model, 'change:title', this.renderTitle);
+            this.listenTo(this.model, 'change:image', this.renderImage);
 
             this.initMarkdown();
             this.renderPreview();
@@ -1280,6 +1282,10 @@
 
         renderTitle: function () {
             this.$('#entry-title').val(this.model.get('title'));
+        },
+
+        renderImage: function () {
+            this.$('#entry-image').val(this.model.get('image'));
         },
 
         // This is a hack to remove iOS6 white space on orientation change bug
